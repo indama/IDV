@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/indama/IDValidataionSDK.git", :tag => "1.0.0" }
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "IDValidationSDK"
   spec.exclude_files = "Classes/Exclude"
 
 
