@@ -5,16 +5,16 @@ target 'IDValidationSDK' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-#  pod 'GoogleMLKit/BarcodeScanning'
-#  pod 'GoogleMLKit/FaceDetection'
-#  pod 'GoogleMLKit/ImageLabeling'
-#  pod 'GoogleMLKit/TextRecognition'
-#  pod 'GoogleMLKit/ObjectDetection'
-#  
-#  pod 'AWSRekognition'
-#  pod 'ZImageCropper'
-#  pod 'SnapKit'
-#  pod 'FFGlobalAlertController'
+  pod 'GoogleMLKit/BarcodeScanning'
+  pod 'GoogleMLKit/FaceDetection'
+  pod 'GoogleMLKit/ImageLabeling'
+  pod 'GoogleMLKit/TextRecognition'
+  pod 'GoogleMLKit/ObjectDetection'
+  
+  pod 'AWSRekognition'
+  pod 'ZImageCropper'
+  pod 'SnapKit'
+  pod 'FFGlobalAlertController'
   
  
 end
