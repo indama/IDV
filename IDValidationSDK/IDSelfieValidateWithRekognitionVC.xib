@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDSelfieValidateWithRekognitionVC" customModule="IDValidationSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="eoW-HZ-rKb" id="r9F-kD-7Gm"/>
+                <outlet property="cameraV" destination="Tlq-Kk-0SD" id="dnZ-Iq-rzC"/>
+                <outlet property="closeBtn" destination="2EI-QQ-zgh" id="m3D-5K-YRd"/>
+                <outlet property="descriptionLbl" destination="Fcv-xG-Z7Z" id="0Uq-W6-6NT"/>
+                <outlet property="extraLbl" destination="Z7n-iH-tXs" id="EBU-ZM-8zf"/>
+                <outlet property="overlayImg" destination="7fx-Qp-iKk" id="Q9g-jv-80z"/>
+                <outlet property="resultAcceptBtn" destination="qCB-xv-9Ca" id="nqL-NZ-Ecl"/>
+                <outlet property="resultAcceptBtnBg" destination="aqQ-IP-UpQ" id="PXK-J4-Ls1"/>
+                <outlet property="titleLbl" destination="vOA-py-fdA" id="Glc-jP-Cah"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-Kk-0SD" customClass="SelfieCameraView" customModule="IDValidationSDK" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraFaceOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="7fx-Qp-iKk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EI-QQ-zgh">
+                    <rect key="frame" x="20" y="48" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="QQO-Yf-u8i"/>
+                        <constraint firstAttribute="height" constant="40" id="ymj-b1-MKG"/>
+                    </constraints>
+                    <state key="normal" image="ic_close"/>
+                    <connections>
+                        <action selector="btnCloseAction:" destination="-1" eventType="touchUpInside" id="bid-Dk-Faq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position your face so that it fills up the oval, and smile for the camera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcv-xG-Z7Z">
+                    <rect key="frame" x="20" y="666" width="335" height="42"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-IP-UpQ">
+                    <rect key="frame" x="0.0" y="722" width="375" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-xv-9Ca">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <viewLayoutGuide key="safeArea" id="aWM-qP-XJy"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="W3l-Ue-MU7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                            <state key="normal" title="DONE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="resultAcceptBtnAction:" destination="-1" eventType="touchUpInside" id="kpt-Mt-gWF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qCB-xv-9Ca" secondAttribute="trailing" id="1Y8-ru-gJp"/>
+                        <constraint firstItem="qCB-xv-9Ca" firstAttribute="leading" secondItem="aqQ-IP-UpQ" secondAttribute="leading" id="FQ3-34-Uaa"/>
+                        <constraint firstAttribute="height" constant="90" id="iuI-pk-GLl"/>
+                        <constraint firstItem="qCB-xv-9Ca" firstAttribute="top" secondItem="aqQ-IP-UpQ" secondAttribute="top" id="kH6-fv-apT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selfie Photo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-py-fdA">
+                    <rect key="frame" x="133.33333333333334" y="56.333333333333336" width="108.33333333333334" height="23.333333333333336"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matching photo…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-iH-tXs">
+                    <rect key="frame" x="123" y="647" width="129" height="18.666666666666629"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-HZ-rKb">
+                    <rect key="frame" x="177.66666666666666" y="680.66666666666663" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="LyG-Ah-Who"/>
+                        <constraint firstAttribute="width" constant="20" id="MMG-SQ-fYY"/>
+                    </constraints>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vOA-py-fdA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0bf-Hl-VeG"/>
+                <constraint firstItem="7fx-Qp-iKk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4bO-lT-U5h"/>
+                <constraint firstItem="Tlq-Kk-0SD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8iq-Lj-pkM"/>
+                <constraint firstAttribute="bottom" secondItem="Tlq-Kk-0SD" secondAttribute="bottom" id="9pT-DY-cDW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fcv-xG-Z7Z" secondAttribute="bottom" constant="70" id="CIz-Zq-SIa"/>
+                <constraint firstItem="aqQ-IP-UpQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cp3-RP-wgH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aqQ-IP-UpQ" secondAttribute="bottom" constant="-34" id="HBT-M3-gOR"/>
+                <constraint firstAttribute="bottom" secondItem="7fx-Qp-iKk" secondAttribute="bottom" id="Jsj-Fb-LZY"/>
+                <constraint firstItem="2EI-QQ-zgh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Nxi-tj-fWa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fcv-xG-Z7Z" secondAttribute="trailing" constant="20" id="OGc-4e-FoQ"/>
+                <constraint firstItem="aqQ-IP-UpQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="P9W-gW-N1s"/>
+                <constraint firstItem="7fx-Qp-iKk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Sy2-o3-uXq"/>
+                <constraint firstItem="eoW-HZ-rKb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cd2-Kl-CJl"/>
+                <constraint firstItem="Tlq-Kk-0SD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eVP-uo-UPv"/>
+                <constraint firstItem="Fcv-xG-Z7Z" firstAttribute="top" secondItem="Z7n-iH-tXs" secondAttribute="bottom" constant="0.33000000000000002" id="fCd-4t-o8I"/>
+                <constraint firstItem="vOA-py-fdA" firstAttribute="centerY" secondItem="2EI-QQ-zgh" secondAttribute="centerY" id="fcA-oh-Bbz"/>
+                <constraint firstItem="Z7n-iH-tXs" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gMu-tC-MZM"/>
+                <constraint firstItem="Fcv-xG-Z7Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lxn-aI-jsZ"/>
+                <constraint firstItem="7fx-Qp-iKk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mr6-4e-bIi"/>
+                <constraint firstItem="2EI-QQ-zgh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="n9v-89-Mdz"/>
+                <constraint firstItem="Tlq-Kk-0SD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nI8-uy-P1l"/>
+                <constraint firstItem="eoW-HZ-rKb" firstAttribute="top" secondItem="Z7n-iH-tXs" secondAttribute="bottom" constant="15" id="wRa-Fq-0lD"/>
+                <constraint firstItem="7fx-Qp-iKk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zZY-am-YiW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.95566502463055"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cameraFaceOverlay" width="375" height="812"/>
+        <image name="ic_close" width="24" height="24"/>
+    </resources>
+</document>
