@@ -11,22 +11,22 @@ Pod::Spec.new do |spec|
 
   spec.name         = "IDValidationSDK"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of IDValidationSDK."
+  spec.summary      = "Validate users."
 
   spec.swift_version = "4.2"
  
-  spec.description  = "A complete description of IDValidationSDK"
+  spec.description  = "ID validation for users"
 
 
-  spec.homepage     = "http://EXAMPLE/IDValidationSDK"
+  spec.homepage     = "http://medyear.com"
  
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
 
   spec.author             = { "Rahim Abdullayev" => "rakhim@medyear.com" }
  
 
-  spec.source       = { :git => "https://github.com/indama/IDValidataionSDK.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/indama/IDValidationSDK.git", :tag => "1.0.0" }
 
   spec.source_files  = "IDValidationSDK"
   spec.exclude_files = "Classes/Exclude"
