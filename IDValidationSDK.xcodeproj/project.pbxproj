@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		309343346959558FB95B3CE8 /* Pods_IDValidationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E34F6B77069425E0D4B1EA4 /* Pods_IDValidationSDK.framework */; };
+		6A46F4CD267B332D00AE163B /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F4B5267B332D00AE163B /* CameraViewAssets.xcassets */; };
+		6A46F4CE267B332D00AE163B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4B7267B332D00AE163B /* Utilities.swift */; };
+		6A46F4CF267B332D00AE163B /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4B8267B332D00AE163B /* CameraGlobals.swift */; };
+		6A46F4D0267B332D00AE163B /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4B9267B332D00AE163B /* SingleImageFetcher.swift */; };
+		6A46F4D1267B332D00AE163B /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BA267B332D00AE163B /* CameraShot.swift */; };
+		6A46F4D2267B332D00AE163B /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BB267B332D00AE163B /* SingleImageSaver.swift */; };
+		6A46F4D3267B332D00AE163B /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BC267B332D00AE163B /* VolumeControl.swift */; };
+		6A46F4D4267B332D00AE163B /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BD267B332D00AE163B /* PhotoLibraryAuthorizer.swift */; };
+		6A46F4D5267B332D00AE163B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BE267B332D00AE163B /* UIViewExtensions.swift */; };
+		6A46F4D6267B332D00AE163B /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4BF267B332D00AE163B /* UIButtonExtensions.swift */; };
+		6A46F4D7267B332D00AE163B /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C0267B332D00AE163B /* ImageFetcher.swift */; };
+		6A46F4D8267B332D00AE163B /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F4C1267B332D00AE163B /* CameraView.strings */; };
+		6A46F4D9267B332D00AE163B /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C3267B332D00AE163B /* CameraViewControllerConstraint.swift */; };
+		6A46F4DA267B332D00AE163B /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C4267B332D00AE163B /* PhotoLibraryViewController.swift */; };
+		6A46F4DB267B332D00AE163B /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C5267B332D00AE163B /* ConfirmViewController.swift */; };
+		6A46F4DC267B332D00AE163B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C6267B332D00AE163B /* CameraViewController.swift */; };
+		6A46F4DD267B332D00AE163B /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F4C7267B332D00AE163B /* ConfirmViewController.xib */; };
+		6A46F4DE267B332D00AE163B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4C9267B332D00AE163B /* CameraView.swift */; };
+		6A46F4DF267B332D00AE163B /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4CA267B332D00AE163B /* CropOverlay.swift */; };
+		6A46F4E0267B332D00AE163B /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4CB267B332D00AE163B /* PermissionsView.swift */; };
+		6A46F4E1267B332D00AE163B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F4CC267B332D00AE163B /* ImageCell.swift */; };
+		6A46F51B267B519B00AE163B /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F512267B519B00AE163B /* FrameView.swift */; };
+		6A46F51C267B519B00AE163B /* HUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F513267B519B00AE163B /* HUDController.swift */; };
+		6A46F51D267B519B00AE163B /* HUDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F514267B519B00AE163B /* HUDContentView.swift */; };
+		6A46F51E267B519B00AE163B /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F515267B519B00AE163B /* Window.swift */; };
+		6A46F51F267B519B00AE163B /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F516267B519B00AE163B /* WindowRootViewController.swift */; };
+		6A46F520267B519B00AE163B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F517267B519B00AE163B /* Images.xcassets */; };
+		6A46F521267B519B00AE163B /* HUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F518267B519B00AE163B /* HUDAssets.swift */; };
+		6A46F522267B519B00AE163B /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A46F519267B519B00AE163B /* PKHUD.h */; };
+		6A46F643267B707300AE163B /* MDDirectValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F631267B707300AE163B /* MDDirectValidationModel.swift */; };
+		6A46F645267B707300AE163B /* IDSelfieValidateWithRekognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F633267B707300AE163B /* IDSelfieValidateWithRekognitionVC.swift */; };
+		6A46F646267B707300AE163B /* IDBackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F634267B707300AE163B /* IDBackCameraView.swift */; };
+		6A46F647267B707300AE163B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F635267B707300AE163B /* UIColor.swift */; };
+		6A46F648267B707300AE163B /* UserDefoutlsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F636267B707300AE163B /* UserDefoutlsFile.swift */; };
+		6A46F649267B707300AE163B /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F637267B707300AE163B /* BaseController.swift */; };
+		6A46F64A267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F638267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.xib */; };
+		6A46F64B267B707300AE163B /* MDErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F639267B707300AE163B /* MDErrorModel.swift */; };
+		6A46F64C267B707300AE163B /* IDCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F63A267B707300AE163B /* IDCameraView.swift */; };
+		6A46F64F267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F63D267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.swift */; };
+		6A46F650267B707300AE163B /* IDValidationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F63E267B707300AE163B /* IDValidationDetailsVC.swift */; };
+		6A46F651267B707300AE163B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F63F267B707300AE163B /* Extension.swift */; };
+		6A46F652267B707300AE163B /* Globols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F640267B707300AE163B /* Globols.swift */; };
+		6A46F653267B707300AE163B /* IDSelfieValidateWithRekognitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A46F641267B707300AE163B /* IDSelfieValidateWithRekognitionVC.xib */; };
+		6A46F6AA267B713000AE163B /* SelfieCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46F6A5267B713000AE163B /* SelfieCameraView.swift */; };
+		6A53CD72268A0794009A2B39 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A53CD71268A0794009A2B39 /* assets.xcassets */; };
+		6A7390B2267B282100EEFD99 /* IDValidationSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7390A4267B282100EEFD99 /* IDValidationSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6ADE27D426904EB50058C547 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E34F6B77069425E0D4B1EA4 /* Pods_IDValidationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDValidationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB2CB25480057B6FD539D01 /* Pods_IDValidationSDK_IDValidationSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDValidationSDK_IDValidationSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A46F4B5267B332D00AE163B /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		6A46F4B7267B332D00AE163B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6A46F4B8267B332D00AE163B /* CameraGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraGlobals.swift; sourceTree = "<group>"; };
+		6A46F4B9267B332D00AE163B /* SingleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageFetcher.swift; sourceTree = "<group>"; };
+		6A46F4BA267B332D00AE163B /* CameraShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShot.swift; sourceTree = "<group>"; };
+		6A46F4BB267B332D00AE163B /* SingleImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageSaver.swift; sourceTree = "<group>"; };
+		6A46F4BC267B332D00AE163B /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		6A46F4BD267B332D00AE163B /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		6A46F4BE267B332D00AE163B /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		6A46F4BF267B332D00AE163B /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		6A46F4C0267B332D00AE163B /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		6A46F4C1267B332D00AE163B /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
+		6A46F4C3267B332D00AE163B /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		6A46F4C4267B332D00AE163B /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		6A46F4C5267B332D00AE163B /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		6A46F4C6267B332D00AE163B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6A46F4C7267B332D00AE163B /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		6A46F4C9267B332D00AE163B /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		6A46F4CA267B332D00AE163B /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		6A46F4CB267B332D00AE163B /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		6A46F4CC267B332D00AE163B /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		6A46F512267B519B00AE163B /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		6A46F513267B519B00AE163B /* HUDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDController.swift; sourceTree = "<group>"; };
+		6A46F514267B519B00AE163B /* HUDContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDContentView.swift; sourceTree = "<group>"; };
+		6A46F515267B519B00AE163B /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		6A46F516267B519B00AE163B /* WindowRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRootViewController.swift; sourceTree = "<group>"; };
+		6A46F517267B519B00AE163B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A46F518267B519B00AE163B /* HUDAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDAssets.swift; sourceTree = "<group>"; };
+		6A46F519267B519B00AE163B /* PKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHUD.h; sourceTree = "<group>"; };
+		6A46F631267B707300AE163B /* MDDirectValidationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDDirectValidationModel.swift; sourceTree = "<group>"; };
+		6A46F633267B707300AE163B /* IDSelfieValidateWithRekognitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDSelfieValidateWithRekognitionVC.swift; sourceTree = "<group>"; };
+		6A46F634267B707300AE163B /* IDBackCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDBackCameraView.swift; sourceTree = "<group>"; };
+		6A46F635267B707300AE163B /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6A46F636267B707300AE163B /* UserDefoutlsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefoutlsFile.swift; sourceTree = "<group>"; };
+		6A46F637267B707300AE163B /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		6A46F638267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDPhotoWithFirebaseStepFirstVC.xib; sourceTree = "<group>"; };
+		6A46F639267B707300AE163B /* MDErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDErrorModel.swift; sourceTree = "<group>"; };
+		6A46F63A267B707300AE163B /* IDCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDCameraView.swift; sourceTree = "<group>"; };
+		6A46F63D267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDPhotoWithFirebaseStepFirstVC.swift; sourceTree = "<group>"; };
+		6A46F63E267B707300AE163B /* IDValidationDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDValidationDetailsVC.swift; sourceTree = "<group>"; };
+		6A46F63F267B707300AE163B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		6A46F640267B707300AE163B /* Globols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globols.swift; sourceTree = "<group>"; };
+		6A46F641267B707300AE163B /* IDSelfieValidateWithRekognitionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDSelfieValidateWithRekognitionVC.xib; sourceTree = "<group>"; };
+		6A46F6A5267B713000AE163B /* SelfieCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelfieCameraView.swift; path = Views/SelfieCameraView.swift; sourceTree = "<group>"; };
+		6A53CD71268A0794009A2B39 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
+		6A7390A1267B282100EEFD99 /* IDValidationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IDValidationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7390A4267B282100EEFD99 /* IDValidationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDValidationSDK.h; sourceTree = "<group>"; };
+		6A7390A5267B282100EEFD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7390AF267B282100EEFD99 /* IDValidationSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDValidationSDKTests.swift; sourceTree = "<group>"; };
+		6A7390B1267B282100EEFD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991E51E73668A9CDADA6EB39 /* Pods-IDValidationSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDValidationSDK.debug.xcconfig"; path = "Target Support Files/Pods-IDValidationSDK/Pods-IDValidationSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		B37CC9B090F5407E617330AF /* Pods-IDValidationSDK-IDValidationSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDValidationSDK-IDValidationSDKTests.release.xcconfig"; path = "Target Support Files/Pods-IDValidationSDK-IDValidationSDKTests/Pods-IDValidationSDK-IDValidationSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		C81E359D7487222767A8711F /* Pods-IDValidationSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDValidationSDK.release.xcconfig"; path = "Target Support Files/Pods-IDValidationSDK/Pods-IDValidationSDK.release.xcconfig"; sourceTree = "<group>"; };
+		C8DF2E06B187B18BF4B17499 /* Pods-IDValidationSDK-IDValidationSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDValidationSDK-IDValidationSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-IDValidationSDK-IDValidationSDKTests/Pods-IDValidationSDK-IDValidationSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A73909E267B282100EEFD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309343346959558FB95B3CE8 /* Pods_IDValidationSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A46F4B4267B332D00AE163B /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F4B5267B332D00AE163B /* CameraViewAssets.xcassets */,
+				6A46F4B6267B332D00AE163B /* Utilities */,
+				6A46F4C1267B332D00AE163B /* CameraView.strings */,
+				6A46F4C2267B332D00AE163B /* ViewController */,
+				6A46F4C8267B332D00AE163B /* Views */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		6A46F4B6267B332D00AE163B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F4B7267B332D00AE163B /* Utilities.swift */,
+				6A46F4B8267B332D00AE163B /* CameraGlobals.swift */,
+				6A46F4B9267B332D00AE163B /* SingleImageFetcher.swift */,
+				6A46F4BA267B332D00AE163B /* CameraShot.swift */,
+				6A46F4BB267B332D00AE163B /* SingleImageSaver.swift */,
+				6A46F4BC267B332D00AE163B /* VolumeControl.swift */,
+				6A46F4BD267B332D00AE163B /* PhotoLibraryAuthorizer.swift */,
+				6A46F4BE267B332D00AE163B /* UIViewExtensions.swift */,
+				6A46F4BF267B332D00AE163B /* UIButtonExtensions.swift */,
+				6A46F4C0267B332D00AE163B /* ImageFetcher.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6A46F4C2267B332D00AE163B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F4C3267B332D00AE163B /* CameraViewControllerConstraint.swift */,
+				6A46F4C4267B332D00AE163B /* PhotoLibraryViewController.swift */,
+				6A46F4C5267B332D00AE163B /* ConfirmViewController.swift */,
+				6A46F4C6267B332D00AE163B /* CameraViewController.swift */,
+				6A46F4C7267B332D00AE163B /* ConfirmViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6A46F4C8267B332D00AE163B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F4C9267B332D00AE163B /* CameraView.swift */,
+				6A46F4CA267B332D00AE163B /* CropOverlay.swift */,
+				6A46F4CB267B332D00AE163B /* PermissionsView.swift */,
+				6A46F4CC267B332D00AE163B /* ImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A46F511267B519B00AE163B /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F512267B519B00AE163B /* FrameView.swift */,
+				6A46F513267B519B00AE163B /* HUDController.swift */,
+				6A46F514267B519B00AE163B /* HUDContentView.swift */,
+				6A46F515267B519B00AE163B /* Window.swift */,
+				6A46F516267B519B00AE163B /* WindowRootViewController.swift */,
+				6A46F517267B519B00AE163B /* Images.xcassets */,
+				6A46F518267B519B00AE163B /* HUDAssets.swift */,
+				6A46F519267B519B00AE163B /* PKHUD.h */,
+			);
+			path = PKHUD;
+			sourceTree = "<group>";
+		};
+		6A739097267B282100EEFD99 = {
+			isa = PBXGroup;
+			children = (
+				6A7390A3267B282100EEFD99 /* IDValidationSDK */,
+				6A7390AE267B282100EEFD99 /* IDValidationSDKTests */,
+				6A7390A2267B282100EEFD99 /* Products */,
+				6A739151267B2CFD00EEFD99 /* Frameworks */,
+				6EF4947DD0995AC8DF680250 /* Pods */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		6A7390A2267B282100EEFD99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A7390A1267B282100EEFD99 /* IDValidationSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A7390A3267B282100EEFD99 /* IDValidationSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6A46F511267B519B00AE163B /* PKHUD */,
+				6A46F4B4267B332D00AE163B /* ALCameraViewController */,
+				6A7390A4267B282100EEFD99 /* IDValidationSDK.h */,
+				6A7390A5267B282100EEFD99 /* Info.plist */,
+				6A46F637267B707300AE163B /* BaseController.swift */,
+				6A46F63F267B707300AE163B /* Extension.swift */,
+				6A46F640267B707300AE163B /* Globols.swift */,
+				6A46F634267B707300AE163B /* IDBackCameraView.swift */,
+				6A46F63A267B707300AE163B /* IDCameraView.swift */,
+				6A46F6A5267B713000AE163B /* SelfieCameraView.swift */,
+				6A46F63D267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.swift */,
+				6A46F638267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.xib */,
+				6A46F633267B707300AE163B /* IDSelfieValidateWithRekognitionVC.swift */,
+				6A46F641267B707300AE163B /* IDSelfieValidateWithRekognitionVC.xib */,
+				6A46F63E267B707300AE163B /* IDValidationDetailsVC.swift */,
+				6A46F631267B707300AE163B /* MDDirectValidationModel.swift */,
+				6A46F639267B707300AE163B /* MDErrorModel.swift */,
+				6A46F635267B707300AE163B /* UIColor.swift */,
+				6A46F636267B707300AE163B /* UserDefoutlsFile.swift */,
+				6A53CD71268A0794009A2B39 /* assets.xcassets */,
+			);
+			path = IDValidationSDK;
+			sourceTree = "<group>";
+		};
+		6A7390AE267B282100EEFD99 /* IDValidationSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7390AF267B282100EEFD99 /* IDValidationSDKTests.swift */,
+				6A7390B1267B282100EEFD99 /* Info.plist */,
+			);
+			path = IDValidationSDKTests;
+			sourceTree = "<group>";
+		};
+		6A739151267B2CFD00EEFD99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E34F6B77069425E0D4B1EA4 /* Pods_IDValidationSDK.framework */,
+				2BB2CB25480057B6FD539D01 /* Pods_IDValidationSDK_IDValidationSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EF4947DD0995AC8DF680250 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				991E51E73668A9CDADA6EB39 /* Pods-IDValidationSDK.debug.xcconfig */,
+				C81E359D7487222767A8711F /* Pods-IDValidationSDK.release.xcconfig */,
+				C8DF2E06B187B18BF4B17499 /* Pods-IDValidationSDK-IDValidationSDKTests.debug.xcconfig */,
+				B37CC9B090F5407E617330AF /* Pods-IDValidationSDK-IDValidationSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A73909C267B282100EEFD99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7390B2267B282100EEFD99 /* IDValidationSDK.h in Headers */,
+				6A46F522267B519B00AE163B /* PKHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A7390A0267B282100EEFD99 /* IDValidationSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A7390B5267B282100EEFD99 /* Build configuration list for PBXNativeTarget "IDValidationSDK" */;
+			buildPhases = (
+				43920452DC2990FD372A2C5E /* [CP] Check Pods Manifest.lock */,
+				6A73909C267B282100EEFD99 /* Headers */,
+				6A73909D267B282100EEFD99 /* Sources */,
+				6A73909E267B282100EEFD99 /* Frameworks */,
+				6A73909F267B282100EEFD99 /* Resources */,
+				6ADE27D426904EB50058C547 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDValidationSDK;
+			productName = IDValidationSDK;
+			productReference = 6A7390A1267B282100EEFD99 /* IDValidationSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A739098267B282100EEFD99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6A7390A0267B282100EEFD99 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 6A73909B267B282100EEFD99 /* Build configuration list for PBXProject "IDValidationSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A739097267B282100EEFD99;
+			productRefGroup = 6A7390A2267B282100EEFD99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A7390A0267B282100EEFD99 /* IDValidationSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A73909F267B282100EEFD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A46F64A267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.xib in Resources */,
+				6A46F4DD267B332D00AE163B /* ConfirmViewController.xib in Resources */,
+				6A46F653267B707300AE163B /* IDSelfieValidateWithRekognitionVC.xib in Resources */,
+				6A46F520267B519B00AE163B /* Images.xcassets in Resources */,
+				6A46F4CD267B332D00AE163B /* CameraViewAssets.xcassets in Resources */,
+				6A53CD72268A0794009A2B39 /* assets.xcassets in Resources */,
+				6A46F4D8267B332D00AE163B /* CameraView.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43920452DC2990FD372A2C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDValidationSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A73909D267B282100EEFD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A46F521267B519B00AE163B /* HUDAssets.swift in Sources */,
+				6A46F64B267B707300AE163B /* MDErrorModel.swift in Sources */,
+				6A46F647267B707300AE163B /* UIColor.swift in Sources */,
+				6A46F650267B707300AE163B /* IDValidationDetailsVC.swift in Sources */,
+				6A46F4D2267B332D00AE163B /* SingleImageSaver.swift in Sources */,
+				6A46F4CE267B332D00AE163B /* Utilities.swift in Sources */,
+				6A46F4E1267B332D00AE163B /* ImageCell.swift in Sources */,
+				6A46F4DC267B332D00AE163B /* CameraViewController.swift in Sources */,
+				6A46F645267B707300AE163B /* IDSelfieValidateWithRekognitionVC.swift in Sources */,
+				6A46F6AA267B713000AE163B /* SelfieCameraView.swift in Sources */,
+				6A46F648267B707300AE163B /* UserDefoutlsFile.swift in Sources */,
+				6A46F4D0267B332D00AE163B /* SingleImageFetcher.swift in Sources */,
+				6A46F51E267B519B00AE163B /* Window.swift in Sources */,
+				6A46F4DF267B332D00AE163B /* CropOverlay.swift in Sources */,
+				6A46F646267B707300AE163B /* IDBackCameraView.swift in Sources */,
+				6A46F4DB267B332D00AE163B /* ConfirmViewController.swift in Sources */,
+				6A46F51D267B519B00AE163B /* HUDContentView.swift in Sources */,
+				6A46F4D3267B332D00AE163B /* VolumeControl.swift in Sources */,
+				6A46F4D7267B332D00AE163B /* ImageFetcher.swift in Sources */,
+				6A46F4D4267B332D00AE163B /* PhotoLibraryAuthorizer.swift in Sources */,
+				6A46F4D6267B332D00AE163B /* UIButtonExtensions.swift in Sources */,
+				6A46F4D9267B332D00AE163B /* CameraViewControllerConstraint.swift in Sources */,
+				6A46F4DA267B332D00AE163B /* PhotoLibraryViewController.swift in Sources */,
+				6A46F4D1267B332D00AE163B /* CameraShot.swift in Sources */,
+				6A46F4D5267B332D00AE163B /* UIViewExtensions.swift in Sources */,
+				6A46F649267B707300AE163B /* BaseController.swift in Sources */,
+				6A46F4DE267B332D00AE163B /* CameraView.swift in Sources */,
+				6A46F651267B707300AE163B /* Extension.swift in Sources */,
+				6A46F51B267B519B00AE163B /* FrameView.swift in Sources */,
+				6A46F4E0267B332D00AE163B /* PermissionsView.swift in Sources */,
+				6A46F4CF267B332D00AE163B /* CameraGlobals.swift in Sources */,
+				6A46F652267B707300AE163B /* Globols.swift in Sources */,
+				6A46F51C267B519B00AE163B /* HUDController.swift in Sources */,
+				6A46F64F267B707300AE163B /* IDPhotoWithFirebaseStepFirstVC.swift in Sources */,
+				6A46F51F267B519B00AE163B /* WindowRootViewController.swift in Sources */,
+				6A46F64C267B707300AE163B /* IDCameraView.swift in Sources */,
+				6A46F643267B707300AE163B /* MDDirectValidationModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A7390B3267B282100EEFD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A7390B4267B282100EEFD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A7390B6267B282100EEFD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991E51E73668A9CDADA6EB39 /* Pods-IDValidationSDK.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T7AERDBSQT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IDValidationSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.medyear.IDValidationSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6A7390B7267B282100EEFD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81E359D7487222767A8711F /* Pods-IDValidationSDK.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T7AERDBSQT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IDValidationSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.medyear.IDValidationSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A73909B267B282100EEFD99 /* Build configuration list for PBXProject "IDValidationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7390B3267B282100EEFD99 /* Debug */,
+				6A7390B4267B282100EEFD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A7390B5267B282100EEFD99 /* Build configuration list for PBXNativeTarget "IDValidationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7390B6267B282100EEFD99 /* Debug */,
+				6A7390B7267B282100EEFD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A739098267B282100EEFD99 /* Project object */;
+}
