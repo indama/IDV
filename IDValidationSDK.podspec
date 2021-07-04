@@ -21,14 +21,14 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/indama/IDV"
  
 
-  spec.license      = "MIT"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author             = { "Rahim Abdullayev" => "rakhim@medyear.com" }
  
 
   spec.source       = { :git => "https://github.com/indama/IDV.git", :tag => "1.0.0" }
 
-  spec.source_files  = "IDValidationSDK"
+  spec.source_files  = "IDV"
   spec.exclude_files = "Classes/Exclude"
 
 
