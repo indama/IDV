@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.description  = "ID validation for users"
 
 
-  spec.homepage     = "http://medyear.com"
+  spec.homepage     = "https://github.com/indama/IDV"
  
 
   spec.license      = "MIT"
