@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "IDValidationSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "Validate users."
 
   spec.swift_version = "4.2"
@@ -26,9 +26,9 @@ Pod::Spec.new do |spec|
   spec.author             = { "Rahim Abdullayev" => "rakhim@medyear.com" }
  
 
-  spec.source       = { :git => "https://github.com/indama/IDV.git", :tag => "1.0.6" }
+  spec.source       = { :git => "https://github.com/indama/IDValidationSDK.git", :tag => "1.0.7" }
 
-  spec.source_files  = "IDV/IDValidationSDK"
+  spec.source_files  = "IDValidationSDK"
   spec.exclude_files = "Classes/Exclude"
 
 
